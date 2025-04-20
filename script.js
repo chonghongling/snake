@@ -7,7 +7,7 @@ const gridSize = 20; // 20px x 20px grid
 const tileCount = canvas.width / gridSize;
 
 let snake = [{ x: 10, y: 10 }];
-let direction = { x: 0, y: 0 };
+let direction = { x: 1, y: 0 };
 let food = { x: 5, y: 5 };
 let score = 0;
 
@@ -18,16 +18,16 @@ const gameSpeed = 100; // in milliseconds
 const scoreDisplay = document.getElementById("score");
 const restartBtn = document.getElementById("restartBtn");
 
-// Initialize game
 function initGame() {
   snake = [{ x: 10, y: 10 }];
-  direction = { x: 0, y: 0 };
+  direction = { x: 1, y: 0 }; // ✅ Snake starts moving right
   food = generateFood();
   score = 0;
   scoreDisplay.textContent = "Score: 0";
   clearInterval(gameInterval);
   gameInterval = setInterval(gameLoop, gameSpeed);
 }
+
 
 // Game loop
 function gameLoop() {
