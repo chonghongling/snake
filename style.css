@@ -35,7 +35,39 @@ body {
     border-radius: 6px;
     transition: background-color 0.3s ease;
   }
+  #startBtn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
   
+  #startBtn:hover {
+    background-color: #1976D2;
+  }
+  #startBtn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  #startBtn:hover {
+    background-color: #1976D2;
+  }
+    
   #restartBtn:hover {
     background-color: #45a049;
   }

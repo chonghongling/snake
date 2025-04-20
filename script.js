@@ -121,4 +121,7 @@ function draw() {
 
   restartBtn.addEventListener("click", initGame);
 
-  initGame();
+  const startBtn = document.getElementById("startBtn");
+  startBtn.addEventListener("click", () => {
+    initGame();});
+
