@@ -12,7 +12,7 @@ let food = { x: 5, y: 5 };
 let score = 0;
 
 let gameInterval;
-const gameSpeed = 500; // in milliseconds
+const gameSpeed = 250; // in milliseconds
 
 // DOM elements
 const scoreDisplay = document.getElementById("score");
